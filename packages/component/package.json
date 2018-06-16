@@ -1,0 +1,35 @@
+{
+  "name": "my-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel --out-dir lib --ignore **/*.spec.js,**/*.test.js --source-maps inline src/",
+    "clean": "rimraf lib",
+    "test": "jest"
+  },
+  "author": "William Wong <compulim@hotmail.com> (http://compulim.info/)",
+  "license": "MIT",
+  "keywords": [
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/compulim/my-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/compulim/my-component/issues"
+  },
+  "homepage": "https://github.com/compulim/my-component#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^22.4.4",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "glamor": "^2.20.40"
+  }
+}

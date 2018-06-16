@@ -1,0 +1,37 @@
+language: node_js
+node_js:
+  - "10"
+before_script:
+  - npm run bootstrap
+  - npm run build
+before_deploy:
+  - npx version-from-git --travis
+deploy:
+  - provider: pages
+    skip-cleanup: true
+    github-token:
+      secure: ""
+    on:
+      branch: master
+    local-dir: packages/playground/build
+  - provider: npm
+    api_key:
+      secure: ""
+    email: "compulim@hotmail.com"
+    on:
+      branch: master
+    skip_cleanup: true
+    tag: master
+  - provider: npm
+    api_key:
+      secure: ""
+    email: "compulim@hotmail.com"
+    on:
+      tags: true
+    skip_cleanup: true
+  - provider: releases
+    api_key:
+      secure: ""
+    on:
+      tags: true
+    skip_cleanup: true

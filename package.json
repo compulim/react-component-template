@@ -1,0 +1,33 @@
+{
+  "name": "my-component-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap --hoist",
+    "build": "lerna run build",
+    "test": "jest"
+  },
+  "author": "William Wong <compulim@hotmail.com> (http://compulim.info/)",
+  "license": "MIT",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/compulim/my-component.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/compulim/my-component/issues"
+  },
+  "homepage": "https://github.com/compulim/my-component#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-env": "^2.4.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "jest": "^22.4.4",
+    "lerna": "^2.11.0",
+    "rimraf": "^2.6.2"
+  }
+}
