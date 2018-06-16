@@ -6,14 +6,8 @@ before_script:
   - npm run build
 before_deploy:
   - npx version-from-git --travis
+  - cp -r packages/component/lib .
 deploy:
-  - provider: pages
-    skip-cleanup: true
-    github-token:
-      secure: ""
-    on:
-      branch: master
-    local-dir: packages/playground/build
   - provider: npm
     api_key:
       secure: ""
@@ -29,6 +23,13 @@ deploy:
     on:
       tags: true
     skip_cleanup: true
+  - provider: pages
+    skip-cleanup: true
+    github-token:
+      secure: ""
+    on:
+      branch: master
+    local-dir: packages/playground/build
   - provider: releases
     api_key:
       secure: ""

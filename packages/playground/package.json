@@ -4,7 +4,7 @@
   "homepage": "/my-component",
   "private": true,
   "dependencies": {
-    "my-component": "^1.0.0",
+    "component": "^1.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
