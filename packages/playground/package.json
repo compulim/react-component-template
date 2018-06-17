@@ -4,7 +4,9 @@
   "homepage": "/my-component",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
     "component": "^1.0.0",
+    "glamor": "^2.20.40",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
