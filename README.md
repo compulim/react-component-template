@@ -10,6 +10,17 @@ This project scaffold can be found at [`compulim/react-component-template`](http
 
 Try out the demo at https://compulim.github.io/my-component/.
 
+# How to use
+
+First, run `npm install my-component` for production build. Or run `npm install my-component@master` for latest development build.
+
+```jsx
+import MyComponent from 'my-component';
+
+export default props =>
+  <MyComponent />
+```
+
 # Contributions
 
 Like us? [Star](https://github.com/compulim/my-component/stargazers) us.
