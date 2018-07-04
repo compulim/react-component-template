@@ -4,6 +4,12 @@
 
 This is my component.
 
+This project scaffold can be found at [`compulim/react-component-template`](https://github.com/compulim/react-component-template).
+
+# Demo
+
+Try out the demo at https://compulim.github.io/my-component/.
+
 # Contributions
 
 Like us? [Star](https://github.com/compulim/my-component/stargazers) us.
