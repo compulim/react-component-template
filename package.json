@@ -2,7 +2,9 @@
   "name": "my-component",
   "version": "0.0.1-0",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "my-component"
+  ],
   "main": "lib/index.js",
   "files": [
     "lib/**/*"
